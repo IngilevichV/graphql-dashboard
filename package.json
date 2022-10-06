@@ -7,7 +7,7 @@
     "npm": "7.x"
   },
   "scripts": {
-    "start": "src/index.js"
+    "start": "node src/index.js"
   },
   "dependencies": {
     "apollo-datasource-rest": "^3.7.0",

@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "back-end demo app for Apollo's lift-off course",
   "main": "src/index.js",
+  "engines": {
+    "npm": "7.x"
+  },
   "scripts": {
     "start": "src/index.js"
   },

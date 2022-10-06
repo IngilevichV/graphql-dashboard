@@ -23,8 +23,9 @@ const typeDefs = gql`
     title: String!
     author: Author!
     thumbnail: String
-    length: Int
+    length: Int @deprecated(reason: "Use durationInSeconds")
     modulesCount: Int
+    durationInSeconds: Int
     description: String
     numberOfViews: Int
     modules: [Module!]!
@@ -33,7 +34,8 @@ const typeDefs = gql`
   type Module {
     id: ID!
     title: String
-    length: Int
+    length: Int @deprecated(reason: "Use durationInSeconds")
+    durationInSeconds: Int
   }
 
   "Author of a complete Track"
